@@ -20,7 +20,7 @@ const app = express();
 
 //middelwares
 app.use(cors({
-  origin:"https://ecommerce-website-client.onrender.com/",
+  origin:["https://ecommerce-website-client.onrender.com","http://localhost:3000"],
   credentials:true
 }));
 app.use(express.json());
